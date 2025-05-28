@@ -1,16 +1,68 @@
+/* Darkmode */
 .title-container {
   display: flex;
   width: 100%;
-  height: 20px;
+  height: 1%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f0f0f0;
+  background-color: #1dcd9f;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: #222222;
+}
+.title-container .title {
+  font-size: 3vw;
+  color: #222222;
+  text-align: center;
+  margin-top: 0.5vw;
+  line-height: 1.2;
+  max-width: 100%;
+  word-break: break-word;
 }
 
+/* Lightmode */
+.title-container {
+  display: flex;
+  width: 100%;
+  height: 10%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Add the following CSS for the toggle button */
+  .theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #1dcd9f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 18px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 1rem;
+    transition: background 0.2s;
+  }
+  .theme-toggle-btn.light {
+    background: #222222;
+    color: #fff;
+  }
+  font-family: "Arial", sans-serif;
+  background: #ffffff;
+}
 .title-container .title {
-  font-size: 2.5vw;
-  color: #333;
+  font-size: 3vw;
+  color: #1dcd9f;
   text-align: center;
   margin-top: 20px;
   line-height: 1.2;
